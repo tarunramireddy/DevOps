@@ -8,7 +8,7 @@ pwd - present working directory
 
 mkdir - make Directory
 
-mkdir -p /tmp/asia/india/bangalore (creating directory hierachy starting with tmp which is already present then creating asia inside temp then india inside asia and bangalore instead india)
+mkdir -p tmp/asia/india/bangalore (creating directory hierachy starting with tmp which is already present or it will be created and creating asia inside temp then india inside asia and bangalore instead india)
 
 cd new_directory; mkdir www; pwd - multiple commands
 
@@ -17,3 +17,5 @@ rmdir /directory - to remove empty directory
 rm -r /directory - to remove directory (recursive, which delete files also along with directory)
 
 cp -r my_dir1 /tmp/my_dir_1 - to copy directory from current to target path
+
+ls /etc/*release* or cat /etc/*release* (to check OS version)

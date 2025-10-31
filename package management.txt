@@ -1,16 +1,16 @@
 rpm - red hat package manager
 
 Install a package:
-rpm - I telnet.rpm 
+rpm - i telnet.rpm 
 
-Uninstall a packae
+Uninstall a package
 rpm -e telnet
 
 Query/Know about the package
 rpm -q telnet
 
 
-YUM - uses rpm underneath
+YUM - uses rpm underneath (Yellowdog Updater, Modified)
 (Yum search software repos that acts as warehouses containing 100 and 1000s of rpm packages it can be local or remote location or public on internet) when we say yum install it searches for all repos and installs all rpm packages, dependencies in proper order. Commonly used software are identified by YUM from /etc/yum.repos.d
 
 

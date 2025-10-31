@@ -9,3 +9,33 @@ cp file1.txt copy_file1.txt (copy file1 contents to copy_file)
 mv new_file.txt sample_file.txt (Move or rename the file)
 
 rm new_file.txt (remove or delete files)
+
+VI Editor:
+
+Command Mode -
+
+x to del a char
+dd to del a line
+
+yy to copy a line
+p to paste that line
+
+top scroll page up - CTRL+u
+top scroll page down - CTRL+d
+
+: (used to type commands)
+:w (save file as :w filename)
+
+:q (quit or discard)
+
+/of (to find of in the file and to move to the next occurrences use n )
+
+u - undo
+ctrl+r - redo
+
+
+Download Files:
+
+curl https://www.test.com/some-file.txt -O test.txt
+
+wget https://www.test.com/some-file.txt -O test.txt
