@@ -1,0 +1,56 @@
+to start a service:
+
+service httpd start - starting a httpd service
+
+or 
+
+systemctl start httpd 
+
+systemctl stop httpd - stop the service
+
+systemctl status httpd - check the status of the service
+
+systemctl enable httpd - Configure httpd to start at startup
+
+systemctl disable httpd - configure httpd to not start at startup
+
+
+Exmaple:
+
+Inorder to start a simple python application -
+
+	/usr/bin/python3 /opt/code/my_app.py
+
+	(curl https://localhost:5000 - Hello,world!)
+
+instead of doing like this giving the paths everytime and running the application we can simply follow below procedure:
+
+in /etc/systemd/system
+
+create a service called: my_app.service
+
+	[Service]
+	ExecStart = /usr/bin/python3 /opt/code/my_app.py
+
+Now we have configured our command with ctl
+
+Now run systemctl daemon-reload (to system know new service created)
+
+systemctl start my_app
+systemctl status my_app
+systemctl stop my_app
+
+
+------------------------------------------------------------------------------------------------
+
+[Unit]
+Description=My python web application
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/code/my_app.py
+ExecStartPre=/bin/bash /opt/code/configure_db.sh         --- to run before service starting
+ExecStartPost=/bin/bash /opt/code/email_status.sh        --- to run after service started
+Restart=always                                           --- incase service crashes it restarts always
+
+[Install]
+WantedBy=multi-user.target                               --- used to enable the service (start automatically)
