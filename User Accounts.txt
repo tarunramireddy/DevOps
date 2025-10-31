@@ -1,0 +1,14 @@
+whoami - current user
+
+id - userid of current user
+
+su tarun - switch from one user to another user
+
+ssh tarun@192.186.1.2 - log into system of other user
+
+root user has root access
+
+normal users can get root privilege using sudo access
+
+
+ 
