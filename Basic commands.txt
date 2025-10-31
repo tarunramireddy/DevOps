@@ -1,6 +1,6 @@
 echo - to print something
 
-ls - to list all the files and directory (unhidden)
+ls - to list all the files and directory (Shows only files which are not hidden)
 
 cd - change directory
 
