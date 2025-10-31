@@ -1,0 +1,11 @@
+touch - to create empty file
+
+cat > file.txt (to create a new file and enter contents) CTRL+D to exit out of prompt and save the data
+
+cat file.txt (to view the data)
+
+cp file1.txt copy_file1.txt (copy file1 contents to copy_file)
+
+mv new_file.txt sample_file.txt (Move or rename the file)
+
+rm new_file.txt (remove or delete files)
